@@ -10,4 +10,3 @@ RUN a2enmod rewrite \
     && a2ensite custom.conf
 
 RUN useradd -m edik
-
