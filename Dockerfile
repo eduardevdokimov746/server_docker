@@ -3,7 +3,6 @@ FROM php:8-apache
 EXPOSE 80:80
 
 RUN apt-get update && apt-get install -y \
-    git \
     curl \
     libpng-dev \
     libonig-dev \
