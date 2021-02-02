@@ -7,6 +7,7 @@ services:
     working_dir: /var/www/html
     ports:
       - 80:80
+      - 5555:5555
   mysql:
     image: mysql
     ports:
@@ -22,7 +23,7 @@ services:
     environment:
       - PMA_HOST=mysql
   node:
-    image: node
+    image: node:14.15.4-alpine3.10
     working_dir: /var/www/html
     volumes:
       - ./app:/var/www/html
